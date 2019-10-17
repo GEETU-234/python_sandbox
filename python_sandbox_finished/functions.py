@@ -18,3 +18,14 @@ def getSum(num1, num2):
 getSum = lambda num1, num2: num1 + num2
 
 print(getSum(10, 3))
+
+
+#basic program to illustrate scope and lifetime of variable
+
+def my_func():
+	x = 10
+	print("Value inside function:",x)
+
+x = 20
+my_func()
+print("Value outside function:",x)
